@@ -32,7 +32,7 @@ def simulate(planets, integration_time, time_interval, output_file):
         sim.add(m=mass, x=pos[0], y=pos[1], z=pos[2], vx=vel[0], vy=vel[1], vz=vel[2])
         initial_positions_velocities.append((label, mass, pos, vel))
 
-    sim.move_to_com()
+    # sim.move_to_com()
 
     times = np.arange(0, integration_time + time_interval, time_interval)
     results = []
